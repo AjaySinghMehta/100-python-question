@@ -10,12 +10,14 @@
                 => minute angle = 6*minute
             
 '''
+from math import floor
 
 def angle(hour, minute):
     hourAngle = 30*hour + 0.5*minute
     minAngle = 6*minute
     result = abs(hourAngle - minAngle)
     result = min(result, 360-result)
+    # result = floor(result)      ''' this line of code will give the floor value of a float number as a int ex(12.6 will be 12)'''
     return result
 
 hour = int(input('enter hour : '))
