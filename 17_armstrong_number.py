@@ -1,5 +1,6 @@
-# armstrong number is a number whose sum of the cubes of its digits equals the number itself
+# armstrong number is a number whose sum of the power of its digits raised to the number of digits equals the number itself
 # example : 153 = 1^3 + 5^3 + 3^3 = 1+125+27 = 153
+# 1634 = 1^4 + 6^4 + 3^4 + 4^4 = 1634 itself
 # import numpy as np
 
 # method 1 : 
@@ -14,7 +15,7 @@ def is_armstrong(num):
         ls.append(num%10)
         num = num//10
     for i in ls:
-        sum += i**3
+        sum += i**len(ls)
     return sum
         
 # print(bool(num == is_armstrong(num)))
