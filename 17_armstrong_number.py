@@ -1,7 +1,7 @@
-# armstrong number is a number whose sum of the power of its digits raised to the number of digits equals the number itself
-# example : 153 = 1^3 + 5^3 + 3^3 = 1+125+27 = 153
-# 1634 = 1^4 + 6^4 + 3^4 + 4^4 = 1634 itself
-# import numpy as np
+'''armstrong number is a number whose sum of the power of its digits raised to the number of digits equals the number itself
+example : 153 = 1^3 + 5^3 + 3^3 = 1+125+27 = 153
+1634 = 1^4 + 6^4 + 3^4 + 4^4 = 1634 itself
+import numpy as np'''
 
 # method 1 : 
 
