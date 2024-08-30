@@ -39,3 +39,5 @@ for i in li1:
 # one combination so we just append it
 li2.append(li1)
 print(f'using second method combinations are : {li2}')
+
+# method 1 is more efficient then printing all the combination manually 
