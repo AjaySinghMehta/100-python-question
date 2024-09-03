@@ -20,3 +20,7 @@ for i in range(1,minimum_num+1):
     if(count == len(li)):
         hcf2 = i
 print(f'hcf using method 2 is : {hcf2}')
+
+# method 3 : using method.gcd funciton
+
+from math import gcd
