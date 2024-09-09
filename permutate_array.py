@@ -26,4 +26,6 @@ def arr(nums):
     return ans
 
 nums = list(map(int, input().split()))
-print(arr(nums))
+print('first method using double for loops : ',arr(nums))
+
+
