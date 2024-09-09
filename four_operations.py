@@ -32,6 +32,6 @@ def solution(operations):
     return x
 
 
-operations = list(input().split())
 
+operations = list(input().split())
 print(solution(operations))
