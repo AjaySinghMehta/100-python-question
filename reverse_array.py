@@ -2,7 +2,7 @@
 we are given an array we need to reverse it 
 ex = array =  [1,2,3,4] ,  result = [4,3,2,1] 
 
-there are three ways to do this 
+there are many ways to do this i will do it in two ways
 first one is for python only 
 
 '''
