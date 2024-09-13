@@ -16,7 +16,7 @@ while(k>0):
 print(li)
 
 # for the above code the time complexity is o(n^2) now we will try to reduce it
-li2
+
 n = len(li2)
 temp = []
 for i in range(n-k,n):
@@ -27,4 +27,10 @@ print(temp)
     
 # but in this code we are increasing the space complexity to O(n) now we will try to reduce it
 
-
+li2.reverse()
+for i in range(k//2):
+    li2[i], li2[k-i-1] = li2[k-1-i], li2[i]
+for j in range(k,(k+n)//2):
+    li2[j], li2[n-(abs(j-k))-1] = li2[n-(abs(j-k))-1], li2[j]
+    
+print(li2)
