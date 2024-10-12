@@ -25,5 +25,15 @@ print(accounts)
 def calculatingWealth(accounts):
     return max(sum(arr) for arr in accounts)
 
+# method 2: 
+def maximumWealth(accounts):
+        max = float("-inf")
+        for holder in accounts:
+            wealth = sum(holder)
+            if(max<wealth):
+                max = wealth
+        return max
+    
+    
 output = calculatingWealth(accounts)
 print(output)
