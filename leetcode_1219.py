@@ -26,7 +26,7 @@ Path to get the maximum gold, 9 -> 8 -> 7.
 
 class Solution:
     ans = 0
-    def getMaximumGold(self, grid: List[List[int]]) -> int:
+    def getMaximumGold(self, grid):
         def maxGold(row,col,n,m,gold,grid):
             if(row<0 or col<0 or row>=n or col>=m):
                 return False
