@@ -1,9 +1,9 @@
-nums = [1,2,2,3,3,3,4,4,4,4,5,5,5,5,6,6,7,7,7,7,8,9,10]
+nums = [5,7,7,8,8,10]
 n = len(nums)
 l = 0
 r = n-1
 flag = 0
-target = 5
+target = 8
 while(l<r):
     mid = (l+r)//2
     if(nums[mid]>=target):
