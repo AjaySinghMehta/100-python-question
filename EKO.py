@@ -34,6 +34,7 @@ def maxpossibleheight(n,m,height):
     l = 0
     r = max(height)
     ans = 0
+    total_wood = 0
     while(l<=r):
         mid = (l+r)//2
         current_wood = 0
@@ -42,9 +43,10 @@ def maxpossibleheight(n,m,height):
                 current_wood += height[i]-mid
         if(current_wood >= m):
             ans = mid
+            total_wood = current_wood
             l = mid+1
         else:
             r = mid-1
-    return ans
+    return ans , total_wood
 
 print(maxpossibleheight(n,m,height))
